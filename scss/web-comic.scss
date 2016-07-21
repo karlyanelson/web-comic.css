@@ -1,0 +1,43 @@
+@import 'helpers/index';
+
+.comic{
+  margin-left: -($comic-strip-gutter);
+  margin-right: -($comic-strip-gutter);
+  overflow-x: hidden;
+}
+
+.comic-strip,
+.comic-strip-row{
+  // @include display(flex);
+  // @include flex-direction(row);
+  // @include flex-wrap(wrap);
+}
+
+.comic-strip-row{
+  // @include flex(1 0 100%);
+}
+
+.comic-strip-title{
+  // @include flex(1 0 100%);
+  padding: $comic-strip-gutter;
+  font-size: 1rem;
+}
+
+.comic-strip-frame{
+  // @include flex(1 1 300px);
+  margin: $comic-strip-gutter;
+  border: 4px solid gray;
+
+  &.frame-tall{
+    @extend %center;
+    max-width: 800px;
+  }
+
+  &.frame-no-border{
+    border: none;
+  }
+
+  img{
+    width: 100%;
+  }
+}

@@ -1,0 +1,25 @@
+.comic-strip-frame.frame-tall {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.comic {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  overflow-x: hidden; }
+
+.comic-strip-title {
+  padding: 0.5rem;
+  font-size: 1rem; }
+
+.comic-strip-frame {
+  margin: 0.5rem;
+  border: 4px solid gray; }
+  .comic-strip-frame.frame-tall {
+    max-width: 800px; }
+  .comic-strip-frame.frame-no-border {
+    border: none; }
+  .comic-strip-frame img {
+    width: 100%; }
+
+/*# sourceMappingURL=web-comic.css.map */
